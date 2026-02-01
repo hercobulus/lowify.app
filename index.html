@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lowify - Simple and Fast Link Shortener</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF6B35",
+                        "brand-dark": "#000000",
+                        "light-gray": "#F7F8FA",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-sans antialiased text-brand-dark bg-white;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+<nav class="max-w-7xl mx-auto w-full px-6 py-8 flex justify-between items-center">
+<div class="flex items-center text-2xl font-extrabold tracking-tight">
+<span class="text-primary">lowi</span><span class="text-brand-dark">fy</span>
+</div>
+<div class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+</div>
+</nav>
+<section class="max-w-7xl mx-auto w-full px-6 pt-16 pb-24 text-center">
+<div class="mb-4">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Lowify</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+            Simple and fast link shortener
+        </h1>
+<p class="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Turn your long, complex URLs into neat, shareable links in seconds. Designed for speed, built for privacy.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<button class="bg-black text-white px-8 py-4 rounded-2xl flex items-center gap-3 shadow-xl hover:bg-gray-800 transition-all active:scale-95 group">
+<svg class="w-6 h-6 fill-white" viewBox="30 336.7 512 512">
+<path d="M405.8 336.7c-5.1 0-10.4 1.2-15.6 3.6l-264 120.3c-15.1 6.9-15.1 28.5 0 35.4l264 120.3c5.2 2.4 10.5 3.6 15.6 3.6 16.5 0 30-13.5 30-30V366.7c0-16.5-13.5-30-30-30z" fill="#00E676"></path>
+<path d="M405.8 512L126.2 384.8c-15.1-6.9-15.1-28.5 0-35.4l279.6-127.3V512z" fill="#EA4335"></path>
+<path d="M405.8 512l-279.6 127.3c-15.1 6.9-15.1 28.5 0 35.4L405.8 802.1V512z" fill="#FBBC04"></path>
+<path d="M405.8 512l-279.6-127.3c-15.1-6.9-15.1-28.5 0-35.4l279.6-127.3V512z" opacity=".2"></path>
+</svg>
+<div class="text-left">
+<div class="text-[10px] uppercase font-bold opacity-70 leading-none">Get it on</div>
+<div class="text-lg font-bold leading-tight">Google Play</div>
+</div>
+</button>
+</div>
+</section>
+<section class="bg-white py-20 px-6 border-y border-gray-100">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-2xl font-bold mb-6">Effortless link sharing</h2>
+<p class="text-lg text-gray-600 leading-relaxed font-light">
+                Lowify eliminates the clutter of long web addresses. Whether you're sharing on social media, via SMS, or in professional documents, our app provides a clean and minimalist experience to transform your links instantly without the bloat of traditional services.
+            </p>
+</div>
+</section>
+<section class="max-w-7xl mx-auto w-full px-6 py-24">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary group-hover:text-white text-primary">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h3 class="font-bold text-lg mb-1">Fast</h3>
+<p class="text-sm text-gray-500">Links generated in milliseconds.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary group-hover:text-white text-primary">
+<span class="material-symbols-outlined text-3xl">magic_button</span>
+</div>
+<h3 class="font-bold text-lg mb-1">Simple</h3>
+<p class="text-sm text-gray-500">One-tap link conversion.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary group-hover:text-white text-primary">
+<span class="material-symbols-outlined text-3xl">no_accounts</span>
+</div>
+<h3 class="font-bold text-lg mb-1">No Sign-up</h3>
+<p class="text-sm text-gray-500">Ready to use immediately.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary group-hover:text-white text-primary">
+<span class="material-symbols-outlined text-3xl">flight</span>
+</div>
+<h3 class="font-bold text-lg mb-1">Lightweight</h3>
+<p class="text-sm text-gray-500">Minimal app size, maximum speed.</p>
+</div>
+</div>
+</section>
+<section class="px-6 mb-24">
+<div class="max-w-4xl mx-auto bg-light-gray rounded-[2.5rem] p-12 text-center border border-gray-100">
+<div class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-full mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary">shield_lock</span>
+</div>
+<h2 class="text-3xl font-bold mb-4">Privacy First</h2>
+<p class="text-xl text-gray-600">We don’t collect your personal data.</p>
+<p class="mt-4 text-sm text-gray-400 max-w-md mx-auto leading-relaxed">
+                Your browsing habits are your business. Lowify doesn't track who you are or what you shorten. No cookies, no trackers, just links.
+            </p>
+</div>
+</section>
+<footer class="mt-auto bg-white border-t border-gray-100 py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center text-xl font-extrabold tracking-tight">
+<span class="text-primary">lowi</span><span class="text-brand-dark">fy</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-400">
+<a class="hover:text-brand-dark transition-colors" href="#">Privacy Policy</a>
+<span class="cursor-default">© 2024 Lowify. All rights reserved.</span>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-gray-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+</div>
+</div>
+</footer>
+
+</body></html>
